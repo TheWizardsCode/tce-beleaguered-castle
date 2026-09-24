@@ -24,7 +24,7 @@ import type {
   ReplayAdapter,
   ValidationResult,
   TakeoverOptions,
-} from './ReplayAdapter';
+} from '../../../../scripts/adapters/ReplayAdapter';
 
 // ── BC transcript types (minimal, for detection/validation) ─
 
