@@ -45,7 +45,7 @@ async function bootGame(): Promise<Phaser.Game> {
   (window as any).__BC_TEST_REDUCED_MOTION__ = true;
 
   const { createBeleagueredCastleGame } = await import(
-    '../../example-games/beleaguered-castle/createBeleagueredCastleGame'
+    '../../src/createBeleagueredCastleGame'
   );
   const game = createBeleagueredCastleGame({ type: Phaser.CANVAS });
   await waitForScene(game, 'BeleagueredCastleScene');

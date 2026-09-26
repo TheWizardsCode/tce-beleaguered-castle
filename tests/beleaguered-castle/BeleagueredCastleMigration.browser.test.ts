@@ -76,7 +76,7 @@ describe('Beleaguered Castle HandView/PileView migration smoke test', () => {
     (window as any).__BC_TEST_REDUCED_MOTION__ = true;
 
     const { createBeleagueredCastleGame } = await import(
-      '../../example-games/beleaguered-castle/createBeleagueredCastleGame'
+      '../../src/createBeleagueredCastleGame'
     );
     game = createBeleagueredCastleGame({ type: Phaser.CANVAS });
     await waitForScene(game, 'BeleagueredCastleScene');

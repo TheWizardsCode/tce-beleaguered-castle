@@ -12,7 +12,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { SaveLoadStore } from '@core-engine';
 import { TranscriptStore, autoSaveTranscript } from '@core-engine/transcript';
-import { deal } from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
+import { deal } from '../../src/BeleagueredCastleRules';
 import {
   serializeBCState,
   deserializeBCState,
@@ -21,14 +21,14 @@ import {
   loadBCSnapshot,
   clearBCSnapshot,
   BC_GAME_TYPE,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleSaveLoad';
-import type { BeleagueredCastleState, BCMove } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+} from '../../src/BeleagueredCastleSaveLoad';
+import type { BeleagueredCastleState, BCMove } from '../../src/BeleagueredCastleState';
 import {
   applyMove,
   isLegalFoundationMove,
   isLegalTableauMove,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
-import { BCTranscriptRecorder } from '../../example-games/beleaguered-castle/GameTranscript';
+} from '../../src/BeleagueredCastleRules';
+import { BCTranscriptRecorder } from '../../src/GameTranscript';
 
 // ── Test helpers ────────────────────────────────────────────
 

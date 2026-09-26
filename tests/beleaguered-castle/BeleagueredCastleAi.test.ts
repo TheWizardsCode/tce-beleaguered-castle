@@ -4,13 +4,13 @@ import {
   getLegalMoves,
   applyMove,
   createSeededRng,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
+} from '../../src/BeleagueredCastleRules';
 import {
   suggestBestMove,
   SolverStrategy,
   BeleagueredCastleAiPlayer,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleAi';
-import type { BeleagueredCastleState, BCMove } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+} from '../../src/BeleagueredCastleAi';
+import type { BeleagueredCastleState, BCMove } from '../../src/BeleagueredCastleState';
 import { Pile } from '@card-system/Pile';
 import { createCard } from '@card-system/Card';
 import type { Card } from '@card-system/Card';

@@ -20,14 +20,14 @@ import {
   isTriviallyWinnable,
   getAutoCompleteMoves,
   citadelColumnSize,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
+} from '../../src/BeleagueredCastleRules';
 import {
   FOUNDATION_COUNT,
   TABLEAU_COUNT,
   CARDS_PER_COLUMN,
   FOUNDATION_SUITS,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleState';
-import type { BeleagueredCastleState } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+} from '../../src/BeleagueredCastleState';
+import type { BeleagueredCastleState } from '../../src/BeleagueredCastleState';
 import type { BaseSetupOptions } from '@core-engine/SetupOptions';
 import { Pile } from '@card-system/Pile';
 import { createCard } from '@card-system/Card';

@@ -13,7 +13,7 @@ import {
   getBcVariant,
   setBcVariant,
   BC_VARIANTS,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleVariant';
+} from '../../src/BeleagueredCastleVariant';
 
 /** Storage key used by the variant persistence module. */
 const BC_VARIANT_STORAGE_KEY = 'tce-bc-variant';

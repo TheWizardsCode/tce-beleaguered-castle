@@ -2,7 +2,7 @@
  * Beleaguered Castle replay adapter tests (moved from tests/replay/adapters.test.ts).
  */
 import { describe, it, expect, beforeEach } from 'vitest';
-import { BeleagueredCastleReplayAdapter } from '../../example-games/beleaguered-castle/scripts/adapters/BeleagueredCastleReplayAdapter';
+import { BeleagueredCastleReplayAdapter } from '../../src/scripts/adapters/BeleagueredCastleReplayAdapter';
 
 // ── Fixtures ────────────────────────────────────────────────
 function makeGolfTranscript(overrides: Record<string, unknown> = {}): Record<string, unknown> {

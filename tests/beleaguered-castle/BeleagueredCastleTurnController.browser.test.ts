@@ -1,11 +1,11 @@
 import { describe, it, expect } from 'vitest';
 import { Pile } from '@card-system/Pile';
 import { createCard } from '@card-system/Card';
-import { deal, applyMove, getLegalMoves, hasNoMoves, hasValuableMoves, isTriviallyWinnable, getAutoCompleteMoves } from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
-import { BCTranscriptRecorder } from '../../example-games/beleaguered-castle/GameTranscript';
-import { BeleagueredCastleTurnController } from '../../example-games/beleaguered-castle/scenes/BeleagueredCastleTurnController';
-import type { BCMove, BeleagueredCastleState } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
-import { FOUNDATION_SUITS } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+import { deal, applyMove, getLegalMoves, hasNoMoves, hasValuableMoves, isTriviallyWinnable, getAutoCompleteMoves } from '../../src/BeleagueredCastleRules';
+import { BCTranscriptRecorder } from '../../src/GameTranscript';
+import { BeleagueredCastleTurnController } from '../../src/scenes/BeleagueredCastleTurnController';
+import type { BCMove, BeleagueredCastleState } from '../../src/BeleagueredCastleState';
+import { FOUNDATION_SUITS } from '../../src/BeleagueredCastleState';
 
 describe('BeleagueredCastleTurnController', () => {
   it('executePlayerMove does not emit game-end callback for states with valuable moves', () => {

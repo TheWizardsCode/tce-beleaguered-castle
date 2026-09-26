@@ -22,19 +22,19 @@ import {
   isTriviallyWinnable,
   getAutoCompleteMoves,
   rankValue,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
-import type { BCMove } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+} from '../../src/BeleagueredCastleRules';
+import type { BCMove } from '../../src/BeleagueredCastleState';
 import {
   FOUNDATION_COUNT,
   TABLEAU_COUNT,
   FOUNDATION_SUITS,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+} from '../../src/BeleagueredCastleState';
 import {
   BCTranscriptRecorder,
   snapshotBoard,
   snapshotCard,
-} from '../../example-games/beleaguered-castle/GameTranscript';
-import type { BCGameTranscript } from '../../example-games/beleaguered-castle/GameTranscript';
+} from '../../src/GameTranscript';
+import type { BCGameTranscript } from '../../src/GameTranscript';
 
 // ── Helpers ─────────────────────────────────────────────────
 

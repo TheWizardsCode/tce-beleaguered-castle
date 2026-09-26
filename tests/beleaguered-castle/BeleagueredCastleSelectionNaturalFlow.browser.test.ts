@@ -27,10 +27,10 @@ import { waitForScene } from '@core-tests/helpers/waitForScene';
 import { CheckpointManager } from '@core-engine/CheckpointManager';
 import {
   getLegalMoves,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
+} from '../../src/BeleagueredCastleRules';
 import type {
   BCMove,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+} from '../../src/BeleagueredCastleState';
 
 const GAME_W = 1280;
 const GAME_H = 720;
@@ -88,7 +88,7 @@ async function bootNaturalGame(seed: number, type: number = Phaser.CANVAS): Prom
   document.body.appendChild(container);
 
   const { createBeleagueredCastleGame } = await import(
-    '../../example-games/beleaguered-castle/createBeleagueredCastleGame'
+    '../../src/createBeleagueredCastleGame'
   );
   const game = createBeleagueredCastleGame({
     type,

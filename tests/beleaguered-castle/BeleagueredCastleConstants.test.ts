@@ -35,7 +35,7 @@ import {
   RESUME_INFO_FONT_SIZE,
   // Audio
   SFX_KEYS,
-} from '../../example-games/beleaguered-castle/scenes/BeleagueredCastleConstants';
+} from '../../src/scenes/BeleagueredCastleConstants';
 
 describe('BeleagueredCastleConstants', () => {
   describe('existing constants unchanged', () => {

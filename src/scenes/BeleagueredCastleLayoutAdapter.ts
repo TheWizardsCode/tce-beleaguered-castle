@@ -3,7 +3,7 @@
  *
  * Uses the SLL layout JSON as the single source of truth for zone positioning.
  *
- * @module example-games/beleaguered-castle/scenes/BeleagueredCastleLayoutAdapter
+ * @module src/scenes/BeleagueredCastleLayoutAdapter
  */
 
 import { anchorPoint } from '@ui/screen-layout';

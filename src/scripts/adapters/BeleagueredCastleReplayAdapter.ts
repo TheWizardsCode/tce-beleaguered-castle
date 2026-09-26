@@ -12,7 +12,7 @@
  * into the scene via `loadBoardState()`.
  *
  * @see ReplayAdapter  -- interface definition
- * @see example-games/beleaguered-castle/GameTranscript.ts  -- BC transcript types
+ * @see src/GameTranscript.ts  -- BC transcript types
  *
  * Related work items:
  * - CG-0MLTFUL061DWDGA2 (adapter pattern)
@@ -32,7 +32,7 @@ import type {
  * Minimal representations of BC transcript types.
  *
  * Full types are defined in
- * `example-games/beleaguered-castle/GameTranscript.ts`.
+ * `src/GameTranscript.ts`.
  * Only the fields needed for detection, validation, and state
  * reconstruction are included here.
  */

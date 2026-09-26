@@ -19,9 +19,9 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import Phaser from 'phaser';
 import { waitForScene } from '@core-tests/helpers/waitForScene';
-import { FOUNDATION_COUNT, TABLEAU_COUNT } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
-import type { BeleagueredCastleState } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
-import { FOUNDATION_SUITS } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+import { FOUNDATION_COUNT, TABLEAU_COUNT } from '../../src/BeleagueredCastleState';
+import type { BeleagueredCastleState } from '../../src/BeleagueredCastleState';
+import { FOUNDATION_SUITS } from '../../src/BeleagueredCastleState';
 
 const VARIANT_STORAGE_KEY = 'tce-bc-variant';
 const VARIANT_HIGHLIGHT_COLOR = '#ffdd88';
@@ -36,7 +36,7 @@ async function bootGame(): Promise<Phaser.Game> {
   container.id = 'game-container';
   document.body.appendChild(container);
   (window as any).__BC_TEST_REDUCED_MOTION__ = true;
-  const { createBeleagueredCastleGame } = await import('../../example-games/beleaguered-castle/createBeleagueredCastleGame');
+  const { createBeleagueredCastleGame } = await import('../../src/createBeleagueredCastleGame');
   const game = createBeleagueredCastleGame({ type: Phaser.CANVAS });
   await waitForScene(game, 'BeleagueredCastleScene');
   return game;

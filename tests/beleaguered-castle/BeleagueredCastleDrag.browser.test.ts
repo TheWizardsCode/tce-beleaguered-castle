@@ -27,8 +27,8 @@ import { waitForScene } from '@core-tests/helpers/waitForScene';
 import {
   getLegalMoves,
   isLegalFoundationMove,
-} from '../../example-games/beleaguered-castle/BeleagueredCastleRules';
-import type { BeleagueredCastleState } from '../../example-games/beleaguered-castle/BeleagueredCastleState';
+} from '../../src/BeleagueredCastleRules';
+import type { BeleagueredCastleState } from '../../src/BeleagueredCastleState';
 
 const GAME_W = 1280;
 const GAME_H = 720;
@@ -83,7 +83,7 @@ async function bootGame(): Promise<Phaser.Game> {
   document.body.appendChild(container);
 
   const { createBeleagueredCastleGame } = await import(
-    '../../example-games/beleaguered-castle/createBeleagueredCastleGame'
+    '../../src/createBeleagueredCastleGame'
   );
   const game = createBeleagueredCastleGame({
     type: Phaser.CANVAS,
